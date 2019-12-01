@@ -1,0 +1,42 @@
+<html lang="en" dir="ltr">
+   <head>
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+      <!-- <script src = "{{ url_for('static', filename = 'colors.js') }}" ></script> -->
+      <title>Welcome</title>
+   </head>
+   <body>
+       <div class = "nav">
+         <nav>
+           <a href="{{ url_for('welcome')}}"><img src="{{url_for('static', filename='book.png')}}"  alt = "book icon"></a>
+           <ul>
+             <li><a href="{{ url_for('author_form')}}">Author Search</a></li>
+             <li><a href="{{ url_for('cover_form')}}">Bookcover Search</a></li>
+             <li><a href="{{ url_for('search_form')}}">Search by Term</a></li>
+             <li><a class = "current" href="{{ url_for('index')}}">Database Info</a></li>
+           </ul>
+         </nav>
+       </div>
+<div class = "info">
+<h1>Welcome to the Book Finder App!</h1>
+<h2>Within this app, you can search through our database of books.</h2>
+<p>You can search from over 2,000 of the top rated books from GoodReads.com to find books by a specific author, search for a book's cover image, or find a specific search by term. We will be working to expand the database of books and to add more search parameters to help you find your next good read.</p>
+</div>
+<div class = "search">
+If you are searching for a specific author, and want a list of books written by this author:<br>
+<a href="{{ url_for('author_form')}}">Search for books by author</a><br>
+<br>
+<br>
+If you are looking for a list of books with a certain search term in the title:<br>
+<a href="{{ url_for('search_form')}}">Search for books by search term</a><br>
+<br>
+<br>
+If you know the title of a book and want to see an image of the bookcover:<br>
+<a href="{{ url_for('cover_form')}}">Search for bookcover by title</a><br>
+</p>
+</div>
+<footer> <p>Sara Gladchun University of Michigan School of Information.<br>
+   &copy; Sara Gladchun - 2019</p></footer>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html lang="en" dir="ltr">
+   <head>
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+      <!-- <script src = "{{ url_for('static', filename = 'colors.js') }}" ></script> -->
+      <title>Welcome</title>
+   </head>
+   <body>
+       <div class = "nav">
+         <nav>
+           <a href="{{ url_for('welcome')}}"><img src="{{url_for('static', filename='book.png')}}"  alt = "book icon"></a>
+           <ul>
+             <li><a href="{{ url_for('author_form')}}">Author Search</a></li>
+             <li><a href="{{ url_for('cover_form')}}">Bookcover Search</a></li>
+             <li><a href="{{ url_for('search_form')}}">Search by Term</a></li>
+             <li><a href="{{ url_for('index')}}">Database Info</a></li>
+           </ul>
+         </nav>
+       </div>
+<div class = "booklist">
+<ul>
+{% for b in book_list %}
+  {{ b }} <br>
+{% endfor %}
+</ul>
+
+{% if not book_list %}
+Sorry, there are no books by this author. Please check your spelling and try again. <br><br>
+{% endif %}
+</div>
+<div class = "directions">
+<a href="{{ url_for('author_form')}}">Search another author</a><br>
+<br>
+<br>
+<a href="{{ url_for('search_form')}}">Search for book by search term</a><br>
+<a href="{{ url_for('cover_form')}}">Search for bookcover by title</a><br>
+<a href="{{ url_for('welcome')}}">Return to home page</a>
+</div>
+<footer> <p>Sara Gladchun University of Michigan School of Information.<br>
+   &copy; Sara Gladchun - 2019</p></footer>
+   </body>
+</html>

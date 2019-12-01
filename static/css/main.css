@@ -1,0 +1,166 @@
+body{
+  background-color: #ccfff5;
+  font-family: monospace;
+  margin: 0px;
+}
+h1{
+  font-size: 32px;
+  padding: 20px;
+  text-align: center;
+}
+h2{
+  font-size: 26px;
+  text-align: center;
+  padding: 20px;
+}
+nav{
+  height: 100px;
+  background: whitesmoke;
+  border: 5px solid black;
+  margin: 30px;
+}
+.nav{
+  display: inline;
+ text-align: left;
+ align-self: center;
+}
+.nav img{
+  display: inline;
+  vertical-align: middle;
+  padding: 15px;
+}
+nav ul{
+  padding: 20px;
+  list-style-type: none;
+  display: inline;
+  justify-content: center;
+}
+nav li{
+  display: inline;
+  padding-right: 20px;
+}
+nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav a:hover{
+  text-decoration: underline;
+}
+.nav .current{
+  text-decoration: underline;;
+}
+.links{
+  padding: 50px;
+  padding-bottom: 0px;
+}
+.monthlybooks{
+  padding: 30px;
+}
+p{
+font-size: 18px;
+}
+ul{
+  padding: 25px;
+  font-size: 18px;
+  list-style-type: circle;
+}
+.container{
+  display: inline;
+}
+.maincontainer{
+  position: relative;
+  display: inline-block;
+  width: 25%;
+  height: 195px;
+  margin: 25px;
+}
+.thecard img{
+  width: 100%;
+  overflow: hidden;
+}
+.thecard{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+.thecard:hover{
+  transform: rotateY(180deg);
+}
+.thecard:focus{
+  transform:rotateY(180deg);
+}
+.thefront{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: black;
+  color: white;
+  border: 5px solid black;
+  overflow: hidden;
+}
+.theback{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: rgba(255, 255, 255, .8);
+  color: black;
+  transform: rotateY(180deg);
+  font-size: 24px;
+  align-self: center;
+  text-align: center;
+  border: 5px solid black;
+}
+.theback h1{
+  font-size: 20px;
+  color: black;
+
+}
+.theback p{
+  font-size: 14px;
+  padding: 25px;
+}
+footer{
+  position: absolute;
+  width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+footer p{
+  padding: 15px;
+}
+.booklist{
+  padding: 50px;
+}
+.booklist ul{
+  font-size: 22px;
+}
+.directions{
+  padding: 50px;
+  font-size: 18px;
+}
+.form{
+  padding: 25px;
+}
+.form p{
+  font-size: 22px;
+  padding-top: 30px;
+}
+.bookimage{
+  padding: 50px;
+}
+.info{
+  padding: 25px;
+}
+.search{
+  padding: 50px;
+  font-size: 18px;
+}

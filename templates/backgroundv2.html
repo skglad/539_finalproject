@@ -1,0 +1,65 @@
+<html lang="en" dir="ltr">
+   <head>
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+      <!-- <script src = "{{ url_for('static', filename = 'colors.js') }}" ></script> -->
+      <title>Welcome</title>
+   </head>
+   <body>
+       <div class = "nav">
+         <nav>
+           <a href="{{ url_for('welcome')}}"><img src="{{url_for('static', filename='book.png')}}" alt = "book icon"></a>
+           <ul>
+             <li><a href="{{ url_for('author_form')}}">Author Search</a></li>
+             <li><a href="{{ url_for('cover_form')}}">Bookcover Search</a></li>
+             <li><a href="{{ url_for('search_form')}}">Search by Term</a></li>
+             <li><a href="{{ url_for('index')}}">Database Info</a></li>
+           </ul>
+         </nav>
+       </div>
+     <h1>Welcome to the Book Finder App!</h1>
+     <h2>Search through over 2,000 books from GoodReads.com to find your next good read!</h2>
+  <div class = "links">
+    <p>With data gathered from the GoodReads website, this program is an interactive way for readers to search through our book database.
+      In this program, you can:</p>
+    <ul>
+     <li><a href="{{ url_for('author_form')}}">Search for books by author</a></li>
+     <li><a href="{{ url_for('cover_form')}}">Search for bookcover by title</a></li>
+     <li><a href="{{ url_for('search_form')}}">Search for books by search term</a></li>
+     <li><a href="{{ url_for('index')}}">Database information</a></li>
+   </ul>
+  </div>
+<div class = "monthlybooks">
+  <p>Ann Arbor Independent Book Shops:<br>
+  (Hover over images for book store address)</p>
+  <div class = "maincontainer">
+    <div class= 'thecard' tabindex="6">
+      <div class= 'thefront'><img src="../static/photos/literati.jpg" alt="Literati"></div>
+      <div class= "theback">
+        <h1>"Literati"</h1>
+        <p>Located at: 124 E Washington St, Ann Arbor MI, 48104 </p></div>
+    </div>
+  </div>
+  <div class = "maincontainer">
+    <div class= 'thecard' tabindex="7">
+      <div class= 'thefront'><img src="../static/photos/crazy_wisdom.jpg" alt="Crazy Wisdom"></div>
+      <div class= "theback">
+        <h1>"Crazy Wisdom"</h1>
+        <p>Located at: 114 S Main St, Ann Arbor MI, 48104</p></div>
+    </div>
+  </div>
+  <div class = "maincontainer">
+    <div class= 'thecard' tabindex="8">
+      <div class= 'thefront'><img src="../static/photos/west_side.jpg" alt="West Side Book Shop"></div>
+      <div class= "theback">
+        <h1>"West Side Book Shop"</h1>
+        <p>Located at: 113 W Liberty St, Ann Arbor MI, 48104</p></div>
+    </div>
+  </div>
+  </div>
+</div>
+<footer> <p>Sara Gladchun University of Michigan School of Information.<br>
+   &copy; Sara Gladchun - 2019</p></footer>
+   </body>
+</html>
