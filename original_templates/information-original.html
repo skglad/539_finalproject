@@ -1,0 +1,23 @@
+<html>
+   <head>
+      <script
+         src = "{{ url_for('static', filename = 'colors.js') }}" ></script>
+   </head>
+<body>
+<h1>Welcome to the Book Finder App!</h1>
+
+<h3>Within this app, you can search through our database of books.</h3>
+<br>
+<br>
+If you are searching for a specific author, and want a list of books written by this author:
+<a href="{{ url_for('author_form')}}">Search for books by author</a><br>
+<br>
+<br>
+If you are looking for a list of books with a certain search term in the title:
+<a href="{{ url_for('search_form')}}">Search for books by search term</a><br>
+<br>
+<br>
+If you know the title of a book and want to see an image of the bookcover:
+<a href="{{ url_for('cover_form')}}">Search for bookcover by title</a><br>
+</body>
+</html>

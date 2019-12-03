@@ -1,0 +1,10 @@
+<h1> Enter your search term: </h1>
+<p>Please note: books with titles that contain the search term will be returned.</p>
+
+<form method="POST">
+    <input name="text">
+    <input type="submit">
+</form>
+<a href="{{ url_for('author_form')}}">Search for books by author</a><br>
+<a href="{{ url_for('cover_form')}}">Search for bookcover by title</a><br>
+<a href="{{ url_for('index')}}">Database information</a>

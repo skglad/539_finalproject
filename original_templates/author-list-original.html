@@ -1,0 +1,16 @@
+<ul>
+{% for b in book_list %}
+  {{ b }} <br>
+{% endfor %}
+</ul>
+
+{% if not book_list %}
+Sorry, there are no books by this author. Please check your spelling and try again. <br><br>
+{% endif %}
+
+<a href="{{ url_for('author_form')}}">Search another author</a><br>
+<br>
+<br>
+<a href="{{ url_for('search_form')}}">Search for book by search term</a><br>
+<a href="{{ url_for('cover_form')}}">Search for bookcover by title</a><br>
+<a href="{{ url_for('welcome')}}">Return to home page</a>
