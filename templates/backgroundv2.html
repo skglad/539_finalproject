@@ -2,6 +2,8 @@
    <head>
      <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
      <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+     <script
+        src = "{{ url_for('static', filename = 'changecolor.js') }}" ></script>
 
       <!-- <script src = "{{ url_for('static', filename = 'colors.js') }}" ></script> -->
       <title>Welcome</title>
@@ -9,7 +11,7 @@
    <body>
        <div class = "nav">
          <nav>
-           <a href="{{ url_for('welcome')}}"><img src="{{url_for('static', filename='book.png')}}" alt = "book icon"></a>
+           <button a href="{{ url_for('welcome')}}" onclick = "change()"><img src="{{url_for('static', filename='book.png')}}" alt = "book icon"></a></button>
            <ul>
              <li><a href="{{ url_for('author_form')}}">Author Search</a></li>
              <li><a href="{{ url_for('cover_form')}}">Bookcover Search</a></li>
@@ -34,7 +36,7 @@
   <p>Ann Arbor Independent Book Shops:<br>
   (Hover over images for book store address)</p>
   <div class = "maincontainer">
-    <div class= 'thecard' tabindex="6">
+    <div class= 'thecard'>
       <div class= 'thefront'><img src="../static/photos/literati.jpg" alt="Literati"></div>
       <div class= "theback">
         <h1>"Literati"</h1>
@@ -42,7 +44,7 @@
     </div>
   </div>
   <div class = "maincontainer">
-    <div class= 'thecard' tabindex="7">
+    <div class= 'thecard'>
       <div class= 'thefront'><img src="../static/photos/crazy_wisdom.jpg" alt="Crazy Wisdom"></div>
       <div class= "theback">
         <h1>"Crazy Wisdom"</h1>
@@ -50,7 +52,7 @@
     </div>
   </div>
   <div class = "maincontainer">
-    <div class= 'thecard' tabindex="8">
+    <div class= 'thecard'>
       <div class= 'thefront'><img src="../static/photos/west_side.jpg" alt="West Side Book Shop"></div>
       <div class= "theback">
         <h1>"West Side Book Shop"</h1>
