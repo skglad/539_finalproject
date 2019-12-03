@@ -6,7 +6,7 @@ by Sara Gladchun
 To create a better user experience and front-end development of a previous Python project in order to have a portfolio piece that demonstrates my back-end and front-end development skills.
 
 ### Note:
-GitHub pages does not support code other than html so I cannot host this page on GitHub pages and the code needs to be run through locally through terminal at the moment. This can be done by cloning or downloading the repo from GitHub and by running the book_toolsv2.py file in the terminal (in the proper folder). It is important to keep the folder structure the same as it is in the GitHub repo. 
+GitHub pages does not support code other than html so I cannot host this page on GitHub pages and the code needs to be run through locally through terminal at the moment. This can be done by cloning or downloading the repo from GitHub and by running the book_toolsv2.py file in the terminal (in the proper folder). It is important to keep the folder structure the same as it is in the GitHub repo. As a next step, I would like to deploy this using AWS or something similar. 
 
 ### Repo for original Project: 
 https://github.com/skglad/SI507_Final_Project
